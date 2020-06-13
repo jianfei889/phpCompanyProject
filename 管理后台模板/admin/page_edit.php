@@ -86,12 +86,12 @@
 					<dt><span class="icon flink"></span>友情连接管理</dt>
 					<dd>
 						<a href="flink_new.php">-&emsp;新增连接</a>
-						<a href="#">-&emsp;连接列表</a>
+						<a href="flink_list.php">-&emsp;连接列表</a>
 					</dd>
 					<dt><span class="icon admin"></span>管理员管理</dt>
 					<dd>
-						<a href="#">-&emsp;新增管理员</a>
-						<a href="#">-&emsp;管理员列表</a>
+						<a href="admin_new.php">-&emsp;新增管理员</a>
+						<a href="admin_list.php">-&emsp;管理员列表</a>
 					</dd>
 				</dl>
             </nav>
