@@ -136,7 +136,10 @@
                         <td>
 							<select name="cate_id" id="">
 								<option value="0">请选择新闻分类</option>
-								<option value="1">分类1</option>
+								<option value="11">今天是个好日子</option>
+								<option value="12">nihao</option>
+								<option value="13">露娜（紫霞仙子）</option>
+								<option value="14">善弈者谋势，不善弈者谋子</option>
 							</select>
                         </td>
                     </tr>

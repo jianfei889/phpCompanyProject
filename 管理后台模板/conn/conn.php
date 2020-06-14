@@ -1,5 +1,6 @@
 <?php   
     header("Content-Type:text/html;charset=utf-8");
+    date_default_timezone_set('PRC');//设置默认时区为PRC（中华人民共和国）时区
 
     // $conn = @mysqli_connect('localhost','root','root','web2') or die("连接失败'") ;
 
