@@ -10,12 +10,15 @@
 		<script type="text/javascript" src="./skin/jquery-1.8.0.min.js"></script>
 		<script type="text/javascript" src="./skin/jquery.jslides.js"></script>
 		<script type="text/javascript" src="./skin/user_index.js"></script>
+		<link rel="stylesheet" href="./lib/lib/css/bootstrap.min.css"> 
+		<script src="./lib/jquery/jquery-1.11.0.min.js"></script>
+		<script src="./lib/lib/js/bootstrap.min.js"></script> 
 	</head>
 	<body>
 		<div id="header_bg">
 			<div id="header">
-				<h1><a href="/">成都XXXXX科技有限公司</a></h1>
-				<div class="dianhua">24小时咨询热线<span>028-88888888</span></div>
+				<h1><a href="./">XXXXX科技有限公司</a></h1>
+				<div class="dianhua">24小时咨询热线<span>8888-998</span></div>
 			</div>
 		</div>
 		<div id="menu">

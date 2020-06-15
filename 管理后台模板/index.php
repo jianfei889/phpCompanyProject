@@ -10,7 +10,7 @@
 	<div class="m1_left">
 		<h3 class="ltitle">
 			<span><a href="product.php"><img src="images/more.jpg" alt="更多"/></a></span>
-			<strong class="on"><a href="product.php">最新产品</a></strong>
+			<strong class="on"><a href="product.php">最新产品 </a></strong>
 		</h3>
 		<div  class="m1_body c">
 
@@ -27,8 +27,9 @@
 					while($row=mysqli_fetch_assoc($rs)){
 
 						echo '<td>';
-						echo '<a href="product_show.php?=' .$row['id']. ' " title=" '.$row['productname'].' ">
+						echo '<a href="product_show.php?id=' .$row['id']. ' " title=" '.$row['productname'].' ">
 								<img src="./files/'  .$row['img'].   ' " alt=""/><br/>'.$row['productname']. 	'</a>';
+								
 						echo '</td> ';
 						
 					}
@@ -126,7 +127,7 @@
 					 while($row=mysqli_fetch_assoc($rs)){
 						echo '<li>';
 					
-						echo '<a href=" ' .$row['link_url'].'  " target="_blank">' .$row['title'].'</a>';
+						echo '<a href=" /www.' .$row['link_url'].'  " target="_blank">' .$row['title'].'</a>';
 
 						echo '</li> '; 
 						

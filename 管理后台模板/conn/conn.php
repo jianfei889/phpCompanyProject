@@ -9,9 +9,9 @@
         //如果$dbconnection变量是null，则表明数据库连接不成功。php中“null”在逻辑判断中被认为是false
         //如果不是“null”，则被认为是true
         if($conn){
-            echo '数据库连接成功（测试用）',"<br>";
+           //数据库连接成功！
         }else{
-            echo '连接失败',"<br>";
+            echo '数据库连接失败',"<br>";
         }
     mysqli_query($conn,"set names utf8") ;
 

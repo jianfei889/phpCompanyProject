@@ -26,7 +26,7 @@
 									<select name="cate_id" class="inbox">
 										<option value=“0>请选择产品分类</option>
 										<?php 
-											$sql = "select * from category where module='新闻中心' order by orderno asc,id desc ";
+											$sql = "select * from category where module='产品中心' order by orderno asc,id desc ";
 										
 											$temp = mysqli_query($conn,$sql);
 

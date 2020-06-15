@@ -24,9 +24,9 @@
 			<!-- <li><a href="#">新闻分类一</a></li> -->
 		</ul>
 
-	<!-- <p>
+	<p>
 		<img src="images/leftbar1.jpg" alt="" width="260"/>
-	</p> -->
+	</p>
 
 
 </div>
