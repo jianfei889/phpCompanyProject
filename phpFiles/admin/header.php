@@ -22,7 +22,7 @@
 	<style>
             #edui2{
                 width:500px;
-                height:150px;
+                height:170px;
             }
             .edui-editor.edui-default{
                 width: 100% !important;
@@ -31,6 +31,11 @@
             #edui1_iframeholder{
                 width: 100% !important;
             }
+			#img_page img{
+				width:320px;
+				height:300px;
+				margin-left:10px;
+			}
         </style>
 
     
@@ -43,7 +48,7 @@
 			</p>
 		</header>
 		<section>
-			<nav>
+			<nav style="min-width: 200px">
 				<h3>欢迎您来到管理后台</h3>
 				<p>
 					登陆名：<strong><?php  echo $_SESSION['username'];  ?></strong>

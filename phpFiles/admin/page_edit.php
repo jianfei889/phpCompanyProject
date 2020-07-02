@@ -23,7 +23,7 @@
         <style>
             #edui2{
                 width:500px;
-                height:150px;
+                height:170px;
             }
             .edui-editor.edui-default{
                 width: 100% !important;

@@ -30,7 +30,7 @@
 								echo '<td>'.$row['id'].'</td>';
 								echo '<td>'.$row['boardname'].'</td>';
 								// echo '<td>' .mb_substr(strip_tags($row['content']),0,80,'utf-8').'</td>';
-								echo '<td>' .$row['content'].'</td>';
+								echo '<td id="img_page">' .$row['content'].'</td>';
 								echo '<td>
 										<a href="page_edit.php?id='.$row['id'].' ">修改</a> /
 										<a href="page_delete.php?id='.$row['id'].'">删除</a>

@@ -26,7 +26,7 @@
 						//分页步骤一：集齐三大条件
 							//条件1
 							$pagesize = 15;
-							//条件2
+							//条件2 
 							$page = isset($_GET['page']) ? $_GET['page']:1;
 							//条件3
 							$sql = "select * from flink";
