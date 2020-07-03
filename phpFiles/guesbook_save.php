@@ -3,7 +3,6 @@
 include('./conn/conn.php');
 
 //1.接收数据
-// $id = $_POST['id'];
 $username = $_POST['username'];
 $content = $_POST['content'];
 

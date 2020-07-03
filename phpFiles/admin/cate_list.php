@@ -33,17 +33,15 @@
 
 						//分页步骤二：当前页应该显示的内容
 							$start = ($page-1)*$pagesize;
-							//查找数据，排序为按照 orderno， 升序排序--asc,倒序排序--desc
+							//查找数据，把数据赋给一个变量，排序为按照 orderno， 升序排序--asc,倒序排序--desc
 							$sql = "select * from category order by orderno asc,id asc";
 							$rs = mysqli_query($conn,$sql);
 
 
 							while($row=mysqli_fetch_assoc($rs)){
-							
 								echo '<tr>';
 								echo '<td>'.$row['id'].'</td>';
 								echo '<td>'.$row['catename'].'</td>';
-
 								echo '<td>' .$row['module'].'</td>';
 								echo '<td>' .$row['orderno'].'</td>';
 								echo '<td>';

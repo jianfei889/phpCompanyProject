@@ -1,9 +1,10 @@
 # phpProjeck代码解释
 
 ## 打开后台管理和前台主页
-  1. 打开后台：```http://localhost/phpPlus//admin/login.php ```
-  2. 打开前台：```http://localhost/phpPlus/phpFiles/ ```
+  1. 打开后台登录界面：```http://localhost/phpPlus/phpFiles/admin/login.php ```
+  2. 打开前台主页：```http://localhost/phpPlus/phpFiles/ ```
 
+## 管理员登录：  用户名: admin,  密码：123456 
 
 ### 管理员账号问题
   1. 在做管理员列表时不能把管理员账号全部删除，必须留有最少一个的管理员账号

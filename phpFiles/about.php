@@ -43,7 +43,6 @@
 			<div class="mbody" id="mbody_img" >
 					<?php
 						echo $about['content'];
-
 					?>
 				</div>
 			</div>

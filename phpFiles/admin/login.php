@@ -13,7 +13,7 @@
 
 <body>
         <fieldset>
-            <legend><h3>为方便进入操作，可快速输入用户名和密码。（测试用，正式项目可删除）</h3></legend>
+            <legend><h3>为方便进入操作，这里显示出用户名和密码。（测试用，正式项目可删除）</h3></legend>
             <p>后台管理员的用户名为：admin</p>
             <p>后台管理员的密码为：123456</p>
             <button id="set" >
@@ -38,9 +38,6 @@
         username.value = "admin"
         password.value = "123456"
     })
-
-
-
 
 </script>
 

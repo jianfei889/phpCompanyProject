@@ -55,7 +55,10 @@ a:hover{color:#0a0;text-decoration:underline;}
 .main1{margin-top:10px;}
 .m1_left{width:744px;float:left;border:1px solid #d2d2d2;}
 .ltitle{height:26px;border-bottom:1px solid #d2d2d2;background:url(../images/ltitle_bg.jpg);padding-top:8px;}
-.ltitle strong{display:block;width:75px;height:26px;float:left;background:url(../images/lt_btn_off.jpg);text-align:center;line-height:26px;margin-left:6px;color:#fff;}
+.ltitle strong{display:block;width:109px !important;height:27px;float:left;background:url(../images/lt_btn_off.jpg);text-align:center;line-height:26px;color:#fff;}
+#chanpin{
+    width: 109px;
+}
 .ltitle strong a{color:#fff;}
 .ltitle strong.on{background:url(../images/lt_btn_on.jpg);}
 .ltitle span{float:right;margin:4px 8px 0 0;}

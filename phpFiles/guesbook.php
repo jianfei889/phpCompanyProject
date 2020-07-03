@@ -25,7 +25,7 @@
 							// 分页条件2
 								$page=isset($_GET['page'])?$_GET['page']:1;
 							// 分页条件3
-								//构造读取产品分类的sql语句
+								//构造读取数据库数据的sql语句
 								$sql = " select * from guesbook order by intime desc";
 								
 								$rs=mysqli_query($conn,$sql);
@@ -36,10 +36,9 @@
 									$sql.=" limit $start,$pagesize";
 									$rs=mysqli_query($conn,$sql);
 
-
-
 						while($row=mysqli_fetch_assoc($rs)){
-							echo 	'<li><em>'.date('Y-m-d',strtotime($row['intime'])).'</em>'.$row['username'].'说：'.$row['content'].'</li>';
+							echo 	'<li><em>'.date('Y-m-d',strtotime($row['intime'])).'</em>'
+										.$row['username'].'说：'.$row['content'].'</li>';
 						}
 
 					?>
@@ -92,8 +91,7 @@
 						<textarea name="content" id="input" class="form-control" rows="6" cols="50" required="required" placeholder="请输入你要留言的内容"></textarea>
 						
 					</div>
-				
-					
+		
 				
 					<button type="submit" class="btn btn-primary">发表评论</button>
 				</form>

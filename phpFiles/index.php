@@ -3,14 +3,14 @@
 	include("./conn/conn.php");
 	include("./header.php");
 
-?>
+?> 
 
 
 <div class="main1">
 	<div class="m1_left">
 		<h3 class="ltitle">
 			<span><a href="product.php"><img src="images/more.jpg" alt="更多"/></a></span>
-			<strong class="on"><a href="product.php">最新产品 </a></strong>
+			<strong class="on"  style="width: 112px;"><a href="product.php" id="chanpin">最新产品 </a></strong>
 		</h3>
 		<div  class="m1_body c">
 
@@ -23,15 +23,12 @@
 
 				<?php //构造读取  数据库数据  的sql语句
 					$sql = " select * from product  order by intime desc limit 6 ";
-					$rs=mysqli_query($conn,$sql);
-					while($row=mysqli_fetch_assoc($rs)){
-
+					$rs=mysqli_query($conn,$sql);//执行操作
+					while($row=mysqli_fetch_assoc($rs)){//循环渲染
 						echo '<td>';
 						echo '<a href="product_show.php?id=' .$row['id']. ' " title=" '.$row['productname'].' ">
-								<img src="./files/'  .$row['img'].   ' " alt=""/><br/>'.$row['productname']. 	'</a>';
-								
+								<img src="./files/'  .$row['img'].   ' " alt=""/><br/>'.$row['productname']. '</a>';
 						echo '</td> ';
-						
 					}
 
 				?>
@@ -75,7 +72,7 @@
 <div class="main1">
 	<div class="m3_left">
 		<div class="m3_ll">
-			<h3 class="ltitle"><span><a href="about.php?id=1"><img src="images/more.jpg" alt="更多"/></a></span><strong class="on">公司简介</strong></h3>
+			<h3 class="ltitle"><span><a href="about.php?id=1"><img src="images/more.jpg" alt="更多"/></a></span><strong class="on" style="width: 112px;">公司简介</strong></h3>
 			<div class="m1_body c">
 
 			<?php //构造读取  数据库数据  的sql语句
@@ -90,7 +87,7 @@
 			</div>
 		</div>
 		<div class="m3_lr">
-			<h3 class="ltitle"><span><a href="news.php"><img src="images/more.jpg" alt="更多"/></a></span><strong class="on">新闻资讯</strong></h3>
+			<h3 class="ltitle"><span><a href="news.php"><img src="images/more.jpg" alt="更多"/></a></span><strong class="on" style="width: 112px;">新闻资讯</strong></h3>
 			<ul class="m1_body c">
 						
 				<?php //构造读取  数据库数据  的sql语句,新闻条数==10
@@ -98,13 +95,12 @@
 					$rs=mysqli_query($conn,$sql);
 					$row=mysqli_fetch_assoc($rs);
 					
-					 while($row=mysqli_fetch_assoc($rs)){
+					 while($row=mysqli_fetch_assoc($rs)){//循环渲染一下数据
 						echo '<li>';
 						//date时间函数，strtotime转换字符为时间
-						echo '<span>' .date('m-d',strtotime($row['intime'])).'</span><a href="content.php?id=' .$row['id'].'  ">'  .$row['title']. '</a>';
-
+						echo '<span>' .date('m-d',strtotime($row['intime'])).'</span>
+							<a href="content.php?id=' .$row['id'].'  ">'  .$row['title']. '</a>';//注意这里要传入id值
 						echo '</li> '; 
-						
 					 }
 
 				?>

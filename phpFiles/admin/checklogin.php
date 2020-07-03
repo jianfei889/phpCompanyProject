@@ -28,7 +28,7 @@ if($row = mysqli_fetch_assoc($rs)){
     //如果能提取则登录成功
     $_SESSION['username'] = $row['username'];
     $_SESSION['userid'] = $row['id'];
-    $_SESSION['flag'] = $row['flag']==1?"超级管理员(动态名称)":"普通管理员";
+    $_SESSION['flag'] = $row['flag']==1?"超级管理员":"普通管理员";
     header("location:index.php");
 }else{
     //否则失败
